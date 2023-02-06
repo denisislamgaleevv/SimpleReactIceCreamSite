@@ -1,0 +1,317 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz&display=swap');
+ .container{
+    width:100%;
+    max-width: 1200px;
+    margin: 0, auto; 
+    padding: 0, 15px;
+    
+ }
+ 
+.pontDesc{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 24px;
+}
+.mainTable{
+    width: 50%;
+}
+ 
+.cacao{
+    height: 270px;   
+    width:270px;   
+   
+    
+}
+.moroz{ 
+    height: 230px;
+    width: 270px;   
+}
+.pont2{
+    
+     margin-bottom: 40px;
+     position: relative; 
+     text-align: center;
+     font-size: calc(36px + 2vmin);
+     font-family: 'Alegreya SC', serif;
+     
+}
+.contRozok{ 
+    display: inline; /* Отображать как строчный элемент */
+    display: flex;
+    flex-flow: column wrap;
+    width: 33.33333333%;
+}
+.panel{
+   
+    text-align: center;
+    margin: 0;
+}
+.sss{
+    height: 100px;
+    width: 100px;
+}
+.table{
+    margin-top: 40px;
+  
+    position: relative; 
+    text-align: center;
+    font-size: calc(32px + 2vmin);
+    font-family: 'Alegreya SC', serif;
+    
+}
+.probel{
+    width: 25%;
+}
+ 
+ .yacheykaText {
+    width: 40%;
+   
+ }
+
+  
+ .footerMain{
+    position: relative;
+    background-color:    rgb(209, 165, 133);
+    display: flex;
+  flex-direction:row; 
+ color:rgb(253, 245, 232); ;
+ 
+  align-items: center;
+  justify-content: center;
+   
+  font-size: calc(24px + 2vmin);
+  font-family: 'Alegreya SC', serif;
+  
+ }
+
+ @keyframes slidein {
+    from {
+       color: rgb(254, 251, 247);
+    }
+  
+    to {
+       color:  rgb(84, 44, 15);
+    }
+  }
+.btnWrapper{
+    text-align: center;
+}
+  .btn{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: rgb(209, 165, 133);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: background 0.1s linear;
+}
+
+.btn--red{
+    background-color: #9b6225;
+}
+.btn--red:hover{
+    background-color: #885620;
+}
+ 
+/* product */
+ .products{
+    margin-top: 10%;
+    margin-bottom: 10%;
+ }
+.pictures{
+    min-width: 100%;
+    justify-content: center;
+   display: flex;
+   margin-bottom: 0.2%;
+   
+}
+.productItem{
+    margin-left:  0.25%;
+    margin-right: 0.25%;
+    margin-bottom: 0.25%;
+    width: 24%;
+    height: 350px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+   
+}
+.productItem:hover .productContent{
+    opacity: 1;
+}
+.productPhoto{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+ 
+.productContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #000000d1;
+}
+.productTitle{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.productText{
+    font-size: 14px;
+    color: rgb(201, 201, 201);
+    font-weight: 300;
+}
+ 
+/* features */
+.features1{
+    display: flex;
+     
+    text-align: center;
+    justify-content: center;
+    
+     
+}
+.featuresIcon{
+    width: 80px ;
+    height:80px ;
+    }
+.featuresItem{
+    font-family: 'Alegreya SC', serif; 
+    color: rgb(84, 44, 15);
+    font-size: 16px;
+        width: 20%;
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 350px;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+       
+    }
+ /* Team */
+.team{
+    margin-left: 10%;
+    margin-right: 10% ;
+    justify-content: center;
+}
+.teamInner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+   
+}
+.teamItem{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding:0;
+    margin-bottom: 30px;
+    width: 18%;
+}
+.teamPhoto{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.teamName{
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #171717;
+}
+.teamProf{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #882020;
+}
+.teamText{
+    font-size: 14px;
+    color: #171717;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+/* social */
+.social{
+    display:flex;
+}
+.socialItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    margin-right: 5px;
+    transition: background 0.1s linear;
+}
+.socialItem:hover{
+    background-color: #e8ecee;
+}
+.socialItem:hover .socialIcon{
+    fill: #000000;
+}
+.socialIcon{
+    display: block;
+    height: 24px;
+    fill:#c6cacc;
+    transition: fill 0.1s linear;
+}
+
+
+
+/* reviews */
+.reviews{
+   
+    background-color: rgb(209, 165, 133);
+}
+.reviewsItem{
+    display: inline-block;
+   
+}
+.reviewsPhoto{
+    width: 50%;
+    height: 500px;
+    position: relative;
+    float: left;
+    justify-content: center;
+}
+ 
+  
+.reviewsText{
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.3;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.reviewsAuthor{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}

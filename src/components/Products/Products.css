@@ -1,0 +1,133 @@
+.panel{
+   
+    text-align: center;
+    margin: 0;
+}
+.sss{
+    height: 100px;
+    width: 100px;
+}
+.table{
+    margin-top: 40px;
+  
+    position: relative; 
+    text-align: center;
+    font-size: calc(32px + 2vmin);
+    font-family: 'Alegreya SC', serif;
+    
+}
+.probel{
+    width: 25%;
+}
+.limonPic{ 
+    width: 450px;
+    height: 320px;
+}
+.limonPicOneColor{ 
+    margin-bottom:50%;
+    width: 170px;
+    height: 280px;
+    
+    float:  right;
+}
+ 
+.yacheyka{
+    width: 33.333333333333%;
+   
+}
+ 
+.limonTextWrapper{ 
+   margin-right: 100%;
+   width: 100%;
+   text-align: left;
+   animation: slidein;
+   animation-duration: 3s;
+   display: block;
+}
+.limonTextWrapperOp{ 
+    font-size: 22px;
+    margin-right: 100%;
+    width: 100%;
+    text-align: left;
+    animation: slidein;
+    animation-duration: 3s;
+    display: block;
+}
+.listPic{
+    width: 240px;
+    height: 210px;
+    float: right;
+   
+}
+.chocoPic{
+    width: 200px;
+    height: 320px;
+}
+.chocoPicOneColor{
+    width: 200px;
+    height: 200px;
+    margin-top: 50%;
+    float: left;
+}
+.chocoTextWrapper{ 
+    margin-right: 100%;
+    width: 100%;
+    text-align: right;
+    animation: slidein;
+    animation-duration: 3s;
+     
+ }
+ .chocoTextWrapperOp{ 
+     font-size: 22px;
+     margin-right: 100%;
+     width: 100%;
+     text-align: right;
+     animation: slidein;
+     animation-duration: 6s;
+     
+ }
+ .yacheykaText {
+    position:sticky;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    
+    margin-right: auto; 
+    margin-left: auto;
+ }
+
+
+ 
+.malinaPic{
+    width: 240px;
+    height: 380px;
+}
+.malinaPicOneColor{
+    width: 450px;
+    height: 350px;
+    margin-bottom: 0%;
+    float: left;
+}
+.malinaTextWrapper{ 
+    margin-left: 5%;
+    width: 100%;
+    text-align: right;
+    animation: slidein;
+    animation-duration: 3s;
+ }
+  
+ .malinaTextWrapperOp{ 
+     font-size: 22px;
+     margin-left: 5%;
+    
+     width: 100%;
+     text-align: right;
+     animation: slidein;
+     animation-duration: 3s;
+     
+ }
+ /*       */ 
+ .yacheyka11{
+    width: 40%;
+ }

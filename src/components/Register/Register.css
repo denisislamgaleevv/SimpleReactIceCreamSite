@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz&display=swap');
+
+
+ 
+.regForm{
+     
+    font-size: 14px;
+    color:rgb(254, 251, 247);
+    height: 70%; 
+    width:  40%;  
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+    font-family: 'Alegreya SC', serif;  
+    font-size: 36px;
+    background-color:  rgb(209, 165, 133, 0.5);
+}
+.regElem2{
+    margin-top: 10%;
+}
+.regElem1{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.regElem3{
+    margin-top: 10%;
+    
+}
+.regElem{
+    margin-bottom: 1%;
+}
+.smallFormText{
+    font-size: 24px;
+}
+.morozReg{
+    height: 300px;
+    width: 350px;
+
+}
+ 
+.malinaReg{
+    position: absolute;
+    height: 300px;
+    width: 400px;  
+    top: 50%;
+    right: 65%; 
+}
+.inputReg{ 
+    font-size:20px;
+    border: 0;
+    color: rgb(84, 44, 15);
+    font-family: 'Alegreya SC', serif; 
+    background-color: rgb(254, 251, 247);
+}
+.btnReg{
+    
+    margin-left: 5px;
+    font-size: 13px;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    background-color: rgb(209, 165, 133);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: background 0.1s linear;
+}
