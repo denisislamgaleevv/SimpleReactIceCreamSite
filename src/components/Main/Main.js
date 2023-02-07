@@ -10,6 +10,7 @@ import pic1 from './src/1.png'
 
 
 
+
 import pic3 from './src/3.png'
 
  
