@@ -30,6 +30,9 @@ useEffect(()=>{
     });
 }, [categoryId]);
 
+if (collections.length ===0)
+    return <h2 className = 'zagruzka'>Загрузка данных...</h2>
+else
 return (
     <div className="Gallery">
       <h1>Наша галерея</h1>
@@ -58,7 +61,7 @@ return (
       </div>
       <div className="content">
 
-
+       
       {collections                                                                 
         .filter((obj)=> obj.name.toLowerCase().includes(searchValue.toLowerCase()))
         .map((obj, index)=>(

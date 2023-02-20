@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz&display=swap');
+ 
+
+.ReviewsForm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.mainReviewsForm{
+    border-radius: 5px;
+    z-index: 3;
+    background-color:  rgb(254, 251, 247);
+    font-family: 'Alegreya SC', serif;
+    width: 70%;
+    height: 85%;
+    margin-top: 5%;
+    margin-left: 15%;
+    display: block;
+    text-align: center;
+}
+.allTextReviewsForm{
+    margin-top: 5%;
+}
+.textReviewsFormWrapper{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.textReviewsFormHeader{
+   
+    justify-content: center;
+  
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
+.headerReviewsForm{
+ 
+    justify-content: center;
+    text-align: center;
+}
+.textReviewsForm{
+    justify-content: center;
+    font-size:125%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.btnReviewsForm{
+    margin-top: 1%;
+}
+.closeIcon{
+    float: right;
+    cursor: pointer;
+   margin-right: -5.5%;
+}
+.probel1{
+    
+    width: 5px;
+}
+.inputReviews{
+    border: 1px solid #dadada;
+  height: 400px;
+  width: 94%;
+  padding: 10px 30px;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+
+.StarIconWhite{
+    color: rgb(209, 165, 133);
+    cursor: pointer;
+ 
+}
+.StarIcon{
+    color: rgb(84, 44, 15);
+    cursor: pointer;
+}

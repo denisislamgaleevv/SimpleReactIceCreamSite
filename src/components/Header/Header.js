@@ -13,10 +13,9 @@ export const Header = ({
     e.preventDefault();
     localStorage.setItem('isLoggedIn', false)
     setIsLoggedIn(false);
-     
-    
     localStorage.setItem('userName', ''); 
     }
+    
     registerLinkVisibility = !isLoggedIn? 'visible':'hidden';
     welcomeLinkVisibility = isLoggedIn? 'visible':'hidden';
   return (
@@ -29,6 +28,7 @@ export const Header = ({
         <a className = "menu" href = "/">Главная</a>
         <a className = "menu" href = "/gallery">Галерея</a>
         <a className = "menu" href = "/products">Продукты</a>
+        <a className = "menu" href = "/reviews">Отзывы</a>
         <a className = "menu" href = "/register" style = {{visibility:registerLinkVisibility}}>Вход</a>
         <a className = "welcome" style = {{visibility:welcomeLinkVisibility}} >
           Добро&nbsp;пожаловать,&nbsp;{localStorage.getItem('userName')}!&nbsp;У Вас 0 баллов&nbsp;

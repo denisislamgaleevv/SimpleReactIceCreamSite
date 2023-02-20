@@ -6,6 +6,7 @@ import {Routes, Route, BrowserRouter,  Navigate} from 'react-router-dom';
 import {React, useState} from 'react';
 import {Gallery } from './components/Gallery/Gallery'
 import {Header} from './components/Header/Header'
+import {Reviews} from './components/Reviews/Reviews'
 export function App() {
   
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
@@ -57,6 +58,12 @@ export function App() {
              isLoggedIn ={isLoggedIn} />
              :<Navigate to="/products"/>}/>
             <Route path = "/products" element = {<Products/>}/>
+            <Route path = "/reviews" element = {
+            <Reviews
+            props
+              userName = {userName}
+             isLoggedIn = {isLoggedIn}
+            />}/>
           </Routes>
         </BrowserRouter>
       </main>

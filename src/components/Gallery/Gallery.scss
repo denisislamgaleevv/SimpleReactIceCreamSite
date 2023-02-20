@@ -44,11 +44,12 @@ h1 {
     transition: all 0.15s ease-in-out;
 
     &:hover {
-      border-color: #000;
+      
+      border: 1px solid rgb(209, 165, 133);;
     }
 
     &.active {
-      background-color: #000;
+      background-color:  rgb(209, 165, 133);;
       color: #fff;
     }
   }
@@ -116,17 +117,14 @@ h1 {
 }
 
 .search-input {
-  font-size: 16px;
-  width: 250px;
-  height: 50px;
-  padding: 0 15px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  outline: none;
-  transition: all 0.15s ease-in-out;
+  font-size:20px;
+  border: 0;
+  color: rgb(84, 44, 15);
+  font-family: 'Alegreya SC', serif; 
+  background-color: rgb(254, 251, 247);
 
   &:focus {
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgb(84, 44, 15);
   }
 }
 
@@ -151,4 +149,9 @@ h1 {
       color: #fff;
     }
   }
+}
+.zagruzka{
+  font-family: 'Alegreya SC', serif; 
+  margin-top: 10px;
+  margin-left: 10px;
 }
