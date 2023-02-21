@@ -24,8 +24,12 @@ export class ReviewsForm extends Component  {
     })
   }
   createReview = () =>{
-    const tname = localStorage.getItem('userName')
-    
+    var tname = parseInt(localStorage.getItem('userName'), 10)
+    if (tname != ''){
+      var tpoints =  Number(localStorage.getItem('points')) + Number(10)
+      localStorage.setItem('points', tpoints )
+      //сделать пуш на сервер 
+    }
     const treview = {
       name: tname === '' ? "Anon" : tname,  
       text: this.state.review, 

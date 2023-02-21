@@ -1,37 +1,128 @@
 import './Register.css';
-import {React, useState} from 'react';
+import {React,   Component} from 'react';
 import pic1 from './src/1.png'
 import pic2 from './src/2.png'
 import pic3 from './src/3.png'
 import pic4 from './src/4.png'
- 
+import axios from 'axios';
 import pic6 from './src/6.png' 
 
 
-export const Register = (
-  props
+export class Register extends Component {
+  state = {
+    login: '', 
+    password: '', 
+    points: 0,
+    regArr : JSON.parse(localStorage.getItem('regArr')),
+  }; 
+  componentDidMount(){
+   fetch(`https://63708fe208218c267e017d80.mockapi.io/Arr`) 
+  .then((res)=> res.json())
+  .then((json) => {
+    
+    this.setState({
+      
    
-  ) => {
-  const [login, setLogin] = useState('');
-  const [password, setPassword] = useState('')
+       regArr: json
+    })
+    
+  })
+  .catch((err)=>{
+      console.warn(err);
+      alert('ошибка')
+  });
+  
+}
+  
+  addNewReg = ( ) =>{    //регистрация нового пользователя
+    const treg = {
+      login: this.state.login, 
+      password: this.state.password, 
+      points: this.state.points,  
+      id: this.state.regArr.length +1
+    }   
+   
+    
+    for (let i = 0; i < this.state.regArr.length; i++) {
+       
+      if (( this.state.regArr[i].login) === treg.login){
+        alert("Вы уже зарегистрированы!")
+        return 0
+      }
+       
+    }
+    axios.post('https://63708fe208218c267e017d80.mockapi.io/Arr', treg)
+    .catch((err)=>{
+      console.log(err)
+      alert(err)
+    })
 
-  const handleLogIn = (e) =>{
-    e.preventDefault(); 
-    localStorage.setItem('isLoggedIn', true); 
-    localStorage.setItem('userName', login); 
-    props.setUserName(login);   
-    props.setIsLoggedIn(true);
+    const temp = [...this.state.regArr]
+    temp.push(treg)
+    
+    this.setState({
+      regArr: temp, 
+      points:  treg.points
+    })
+    
+    localStorage.setItem('points',    treg.points)
+    localStorage.setItem('regArr', JSON.stringify(temp))
+    localStorage.setItem('isLoggedIn', true);
+    this.props.setIsLoggedIn(true); 
+    localStorage.setItem('userName', this.state.login); 
+    this.props.setUserName(this.state.login);
+    
+  }
+  handleLogIn = () =>{     //вход уже зареганного пользователя
+    const treg = {
+      login: this.state.login, 
+      password: this.state.password, 
+      points: this.state.points,  
+      id: this.state.regArr.length +1
+    }  
+   let forPoint = 0
+    for (let i = 0; i < this.state.regArr.length; i++) {
+      if ((( this.state.regArr[i].login) === treg.login) ){
+        if ((this.state.regArr[i].password != treg.password)){
+          alert('Неверный пароль!')
+          return 0
+        }
+        else {
+
+           forPoint =  this.state.regArr[i].points
+           console.log(forPoint)
+        }
+            
+      }
+       
+    }
+   localStorage.setItem('points',  forPoint )
+     this.setState({
+       points:  forPoint
+     })     
+    localStorage.setItem('isLoggedIn', true);
+    this.props.setIsLoggedIn(true); 
+    localStorage.setItem('userName', this.state.login); 
+    this.props.setUserName(this.state.login); 
+    
+ 
   }
 
-  const handleLoginChange = (e) =>{
-    setLogin(e.target.value ); 
+  handleLoginChange = (e) =>{
+    this.setState({
+      login: e.target.value
+    })
+    
   }
 
-  const handlePasswordChange = (e) =>{
-    setPassword(e.target.value ); 
+  handlePasswordChange = (e) =>{
+    this.setState({
+      password: e.target.value
+    })
   }
-
+  render(){
   return (
+    
     <div className="Reg">
        <img src = {pic1} className='morozReg'/> 
       
@@ -47,7 +138,7 @@ export const Register = (
      
        <div className='regElem3' >
         <input type = "text" 
-        onChange={handleLoginChange}
+        onChange={this.handleLoginChange}
          placeholder='Логин'
           name = "login"
            className='inputReg'
@@ -56,15 +147,15 @@ export const Register = (
        </div>
         <div className='regElem'>
         <input type = "password"
-         onChange={handlePasswordChange} 
+         onChange={this.handlePasswordChange} 
          placeholder='Пароль'
            name = "parol"
            className='inputReg' 
            required/> 
        </div>
        <div className='regElem2'>
-       <button className='btnReg' onClick={handleLogIn}>Регистрация</button>
-        <button className='btnReg'>Войти</button>
+       <button className='btnReg' onClick={this.addNewReg}>Регистрация</button>
+        <button className='btnReg'   onClick={this.handleLogIn}>Войти</button>
        
         </div>
         <div className='smallFormText'>  
@@ -72,5 +163,6 @@ export const Register = (
         </div>
         </form>
     </div>
-  )
+    )
+}
 }

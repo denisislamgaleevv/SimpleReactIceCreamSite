@@ -113,62 +113,62 @@ render(scrollOn){
          <div className="products">
        <div className="pictures">
           
-           <div class="productItem">
-           <img class="productPhoto" src={assorti} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={assorti} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
-           <div class="productItem">
-           <img class="productPhoto" src={brown} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={brown} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
-           <div class="productItem">
-           <img class="productPhoto" src={beaut} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={beaut} alt="" width="650"/>
+               <div clasName="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
-           <div class="productItem">
-           <img class="productPhoto" src={brown} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={brown} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
            </div>
            <div className="pictures">
-           <div class="productItem">
-           <img class="productPhoto" src={brown} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={brown} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
-           <div class="productItem">
-           <img class="productPhoto" src={assorti} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={assorti} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
-           <div class="productItem">
-           <img class="productPhoto" src={beaut} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={beaut} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
-           <div class="productItem">
-           <img class="productPhoto" src={brown} alt="" width="650"/>
-               <div class="productContent">
-                   <div class="productTitle">Название продукта</div>
-                   <div class="productText">описание продукта</div>
+           <div className="productItem">
+           <img className="productPhoto" src={brown} alt="" width="650"/>
+               <div className="productContent">
+                   <div className="productTitle">Название продукта</div>
+                   <div className="productText">описание продукта</div>
                </div>
            </div>
            </div>
@@ -180,69 +180,69 @@ render(scrollOn){
     
    
             
-               <div class="features">
-               <div class="features1">
-                   <div class="featuresItem">
-                       <img class="featuresIcon" src={icon1} alt=""/>
-                       <h4 class="featuresTitle">Бесплатная доставка</h4>
-                       <div class="featuresText">По городу Уфа доставка Бесплатная. До 10км от города 2000, дальше - цена договорная</div>
+               <div className="features">
+               <div className="features1">
+                   <div className="featuresItem">
+                       <img className="featuresIcon" src={icon1} alt=""/>
+                       <h4 className="featuresTitle">Бесплатная доставка</h4>
+                       <div className="featuresText">По городу Уфа доставка Бесплатная. До 10км от города 2000, дальше - цена договорная</div>
                    </div>
-                   <div class="featuresItem">
-                   <img class="featuresIcon" src={icon2} alt=""/>
-                   <h4 class="featuresTitle">Лучшие цены</h4>
-                   <div class="featuresText">Мы постоянно пытаемся оптимизировать пути доставки и производства для лучшего предложения для вас </div>
+                   <div className="featuresItem">
+                   <img className="featuresIcon" src={icon2} alt=""/>
+                   <h4 className="featuresTitle">Лучшие цены</h4>
+                   <div className="featuresText">Мы постоянно пытаемся оптимизировать пути доставки и производства для лучшего предложения для вас </div>
                    </div>
-                   <div class="featuresItem">
-                   <img class="featuresIcon" src={icon3} alt=""/>
-                   <h4 class="featuresTitle">У нас все законно</h4>
-                   <div class="featuresText">Мы работаем согласно законодательству РФ и всегда предоставляем все отчеты</div>
+                   <div className="featuresItem">
+                   <img className="featuresIcon" src={icon3} alt=""/>
+                   <h4 className="featuresTitle">У нас все законно</h4>
+                   <div className="featuresText">Мы работаем согласно законодательству РФ и всегда предоставляем все отчеты</div>
                    </div>
                    </div>
-                   <div class="features1">
-                   <div class="featuresItem">
-                   <img class="featuresIcon" src={icon4} alt=""/>
-                   <h4 class="featuresTitle">Качественная упаковка</h4>
-                   <div class="featuresText">Мы закупаем качественные материалы для упаковки чтобы мороженое попало вам в руки без проблем и в наилучшем состоянии</div>
+                   <div className="features1">
+                   <div className="featuresItem">
+                   <img className="featuresIcon" src={icon4} alt=""/>
+                   <h4 className="featuresTitle">Качественная упаковка</h4>
+                   <div className="featuresText">Мы закупаем качественные материалы для упаковки чтобы мороженое попало вам в руки без проблем и в наилучшем состоянии</div>
                    </div>
-                   <div class="featuresItem">
-                   <img class="featuresIcon" src={icon5} alt=""/>
-                   <h4 class="featuresTitle">Отличное качество</h4>
-                   <div class="featuresText">Мы регулярно проверяем наших поставщиков и тчательно следим за качеством товара</div>
+                   <div className="featuresItem">
+                   <img className="featuresIcon" src={icon5} alt=""/>
+                   <h4 className="featuresTitle">Отличное качество</h4>
+                   <div className="featuresText">Мы регулярно проверяем наших поставщиков и тчательно следим за качеством товара</div>
                    </div>
-                   <div class="featuresItem">
-                   <img class="featuresIcon" src={icon6} alt=""/>
-                       <h4 class="featuresTitle">Растущая популярность</h4>
-                       <div class="featuresText">Мы всегда рады новым покупателям и делаем все возможное чтобы продолжать сотрудничество</div>
+                   <div className="featuresItem">
+                   <img className="featuresIcon" src={icon6} alt=""/>
+                       <h4 className="featuresTitle">Растущая популярность</h4>
+                       <div className="featuresText">Мы всегда рады новым покупателям и делаем все возможное чтобы продолжать сотрудничество</div>
                    </div>
                    </div>
                </div> 
             
     
    
-       <div class="team">
+       <div className="team">
            
-               <div class="teamInner">
-                   <div class="teamItem">
-                   <img class="teamPhoto" src={team1} alt=""/>
-                       <div class="teamName">Исламгалеев Денис</div>
-                       <div class="teamProf">Генеральный директор</div>
-                       <div class="teamText">
+               <div className="teamInner">
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team1} alt=""/>
+                       <div className="teamName">Исламгалеев Денис</div>
+                       <div className="teamProf">Генеральный директор</div>
+                       <div className="teamText">
                            <p>
                                Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
                            </p>
                        </div>
-                       <div class="social">
-                       <a class="socialItem" href="#" target="_blank">
+                       <div className="social">
+                       <a className="socialItem" href="#" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a class="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="#" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a class="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="#" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
@@ -250,81 +250,81 @@ render(scrollOn){
                        </div>
                    </div>
                     
-                   <div class="teamItem">
-                   <img class="teamPhoto" src={team3} alt=""/>
-                       <div class="teamName">Кильмухаметова Гузель</div>
-                       <div class="teamProf">Финансовый директор</div>
-                       <div class="teamText">
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team3} alt=""/>
+                       <div className="teamName">Кильмухаметова Гузель</div>
+                       <div className="teamProf">Финансовый директор</div>
+                       <div className="teamText">
                            <p>
                                Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
                            </p>
                        </div>
-                       <div class="social">
-                           <a class="socialItem" href="#" target="_blank">
+                       <div className="social">
+                           <a className="socialItem" href="#" target="_blank">
                                 
                                    <img className='socialIcon' src = {vk}/> 
                                 
                            </a>
-                           <a class="socialItem" href="#" target="_blank">
+                           <a className="socialItem" href="#" target="_blank">
                                 
                                <img className='socialIcon' src = {inst}/> 
                                
                            </a>
-                           <a class="socialItem" href="#" target="_blank">
+                           <a className="socialItem" href="#" target="_blank">
                                 
                                <img className='socialIcon' src = {facebook}/> 
                               
                            </a>
                        </div>
                    </div>
-                   <div class="teamItem">
-                   <img class="teamPhoto" src={team4} alt=""/>
-                       <div class="teamName">Хамидуллина Гульнара</div>
-                       <div class="teamProf">Начальник отдела сбыта</div>
-                       <div class="teamText">
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team4} alt=""/>
+                       <div className="teamName">Хамидуллина Гульнара</div>
+                       <div className="teamProf">Начальник отдела сбыта</div>
+                       <div className="teamText">
                            <p>
                                Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
                            </p>
                        </div>
-                       <div class="social">
-                       <a class="socialItem" href="#" target="_blank">
+                       <div className="social">
+                       <a className="socialItem" href="#" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a class="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="#" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a class="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="#" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
                         </a>
                        </div>
                    </div>
-                   <div class="teamItem">
-                   <img class="teamPhoto" src={team2} alt=""/>
-                       <div class="teamName">Железнов Тимофей</div>
-                       <div class="teamProf">Креативный директор</div>
-                       <div class="teamText">
+                   <div className="teamItem">
+                   <img className="teamPhoto" src={team2} alt=""/>
+                       <div className="teamName">Железнов Тимофей</div>
+                       <div className="teamProf">Креативный директор</div>
+                       <div className="teamText">
                            <p>
                                Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
                            </p>
                        </div>
-                       <div class="social">
-                       <a class="socialItem" href="#" target="_blank">
+                       <div className="social">
+                       <a className="socialItem" href="#" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a class="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="#" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a class="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="#" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
@@ -340,17 +340,17 @@ render(scrollOn){
    
    
       
-       <div class="reviews">
+       <div className="reviews">
             
-               <div class="reviewsItem">
-                   <div class="reviewsPhoto">
-                       <img class="reviewsImg" src={reviews1} height ="550" alt=""/>
+               <div className="reviewsItem">
+                   <div className="reviewsPhoto">
+                       <img className="reviewsImg" src={reviews1} height ="550" alt=""/>
                    </div>
-                   <div class="reviewsContent">
-                       <div class="reviewsText">
+                   <div className="reviewsContent">
+                       <div className="reviewsText">
                            "Значимость этих проблем настолько очевидна, что консультация с широким активом способствует подготовки и реализации обучения кадров."
                        </div>
-                       <div class="reviewsAuthor">
+                       <div className="reviewsAuthor">
                            Мария Вольвина - владелец торговой сети TiTotum
                        </div>
                    </div>
@@ -361,7 +361,7 @@ render(scrollOn){
    
             
          </body>
-         <div class="line"></div> 
+         <div className="line"></div> 
    
    
    

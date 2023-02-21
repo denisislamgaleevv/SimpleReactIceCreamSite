@@ -1,0 +1,72 @@
+[
+    {
+     "category": 2,
+     "name": "Разное",
+     "photos": [
+      "https://mykaleidoscope.ru/uploads/posts/2021-09/1632368329_6-mykaleidoscope-ru-p-krasivoe-morozhenoe-krasivo-foto-6.jpg",
+      "https://klike.net/uploads/posts/2020-03/1585472824_2.jpeg",
+      "https://img.freepik.com/premium-photo/beautiful-ice-cream-in-a-transparent-bowl-on-a-wooden-background_520011-428.jpg",
+      "https://misanec.ru/wp-content/uploads/2019/04/15_12_%D1%86%D0%B5%D0%BD%D1%82%D1%802_%D0%BA%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D0%B0%D1%8F-%D0%BC%D0%BE%D1%80%D0%BE%D0%B6%D0%B5%D0%BD%D0%BA%D0%B0.jpg"
+     ]
+    },
+    {
+     "category": 1,
+     "name": "Малина",
+     "photos": [
+      "https://sergiev.ru/media/images/2697/malinovaya_malina.jpg",
+      "https://img.povar.ru/uploads/90/b5/f3/bc/yagodi_malini_malina-517679.jpg",
+      "https://99px.ru/sstorage/53/2017/02/tmb_192043_4542.jpg",
+      "https://mobimg.b-cdn.net/v3/fetch/cf/cfcace5cbdc0fb18883800cae561b213.jpeg"
+     ]
+    },
+    {
+     "category": 1,
+     "name": "Лимоны",
+     "photos": [
+      "https://klike.net/uploads/posts/2020-03/1584355850_2.jpg",
+      "https://avatarko.ru/img/kartinka/1/lyubov_limon.jpg",
+      "http://komu-podarok.ru/wp-content/uploads/2017/08/slide1home07_1024.jpg",
+      "https://www.passion.ru/imgs/2017/05/13/14/875611/04f5d05c7b416c8981f6384d08432b75f8e0581c.jpg"
+     ]
+    },
+    {
+     "category": 1,
+     "name": "Какао",
+     "photos": [
+      "https://lookbio.ru/wp-content/uploads/2013/05/ed126a66bb8ae424bb6fdb62222448ea.jpg",
+      "https://cs9.pikabu.ru/post_img/big/2018/03/02/12/1520021699161838477.jpg",
+      "https://iv.kommersant.ru/Issues.photo/RADIO/2014/06/24/KMO_083163_00310_1_t218_104221.jpg",
+      "https://i.ytimg.com/vi/5gCcdV3QuTU/maxresdefault.jpg"
+     ]
+    },
+    {
+     "category": 2,
+     "name": "Ванильное",
+     "photos": [
+      "https://s1.eda.ru/StaticContent/Photos/160312155529/160804132500/p_O.jpg",
+      "https://vhealth.ru/img/products/18422.jpg",
+      "https://s1.eda.ru/StaticContent/Photos/120213175629/120213175714/p_O.jpg",
+      "https://cdn.lifehacker.ru/wp-content/uploads/2020/06/Depositphotos_108250130_xl-2015-1_1591093757-1280x640.jpg"
+     ]
+    },
+    {
+     "category": 2,
+     "name": "Шоколадное",
+     "photos": [
+      "https://www.photorecept.ru/wp-content/uploads/2021/11/shokoladnoe-morozhenoe-s-kusochkami-shokolada-9.jpg",
+      "https://www.maggi.ru/data/images/recept/img640x500/recept_6211_kj2h.jpg",
+      "https://dom-desertov.ru/wp-content/uploads/2018/06/shokoladnoe-morozhenoe-v-domashnih-usloviyah-1-1000x1500.jpg",
+      "https://xcoffee.ru/wp-content/uploads/2020/06/db82c463c9466b5593831eb57d0036ac.jpg"
+     ]
+    },
+    {
+     "category": 2,
+     "name": "Лимонное",
+     "photos": [
+      "https://avatars.dzeninfra.ru/get-zen_doc/1653873/pub_5c7e829517b52000b3abe652_5c7e842873b9c200b537a022/scale_1200",
+      "https://www.patee.ru/r/x6/18/89/71/960m.jpg",
+      "https://i.ytimg.com/vi/7hdhEgkbY4E/maxresdefault.jpg",
+      "https://img.freepik.com/premium-photo/lemon-ice-cream-with-mint-in-a-glass_164638-8939.jpg"
+     ]
+    }
+   ]

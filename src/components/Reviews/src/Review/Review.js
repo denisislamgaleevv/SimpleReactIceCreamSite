@@ -20,8 +20,9 @@ export const Review = ({stars,  name, text}) => {
   return (
     <div className="Review">
         <div>  
-       <h3 className='h3'>   {name}</h3>
+       <h3 className='h3'>   {name}  &nbsp;&nbsp;&nbsp;  { getStars(stars)} </h3> 
         </div>
+      
         <div>  
         {text}
         </div>
@@ -29,7 +30,7 @@ export const Review = ({stars,  name, text}) => {
         
         <div>
 
-        { getStars(stars)}
+        
         </div>
       </div>
   )

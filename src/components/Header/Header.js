@@ -7,7 +7,8 @@ export const Header = ({
     setIsLoggedIn,
      registerLinkVisibility,
      welcomeLinkVisibility, 
-    userName 
+    userName, 
+    points
 }) => {
   const handleExit = (e) =>{
     e.preventDefault();
@@ -31,7 +32,7 @@ export const Header = ({
         <a className = "menu" href = "/reviews">Отзывы</a>
         <a className = "menu" href = "/register" style = {{visibility:registerLinkVisibility}}>Вход</a>
         <a className = "welcome" style = {{visibility:welcomeLinkVisibility}} >
-          Добро&nbsp;пожаловать,&nbsp;{localStorage.getItem('userName')}!&nbsp;У Вас 0 баллов&nbsp;
+          Добро&nbsp;пожаловать,&nbsp;{localStorage.getItem('userName')}!&nbsp;У Вас &nbsp;{localStorage.getItem('points')}&nbsp; баллов&nbsp;
           <LogoutIcon className='logoutIcon' onClick = {handleExit}/>  
           
           </a>

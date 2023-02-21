@@ -13,7 +13,7 @@ export function App() {
     if (localStorage.getItem('isLoggedIn') === 'true') return true
     return false
   })
-  
+  const [points, setPoints] = useState((localStorage.getItem('points')  ) )
   const [userName, setUserName] = useState((localStorage.getItem('userName') != '') )
   /* 
   const mysql = require('mysql');  //подключаем mysql
@@ -43,9 +43,11 @@ export function App() {
      props
     userName = {userName}
     setIsLoggedIn= {setIsLoggedIn}
-     isLoggedIn ={isLoggedIn}/>
+     isLoggedIn ={isLoggedIn}
+     points = { points}
+     />
       <main>  
-      <div class="line"></div> 
+      <div className="line"></div> 
      
         <BrowserRouter>  
           <Routes>
@@ -55,7 +57,9 @@ export function App() {
              props  
             setUserName = {setUserName} 
              setIsLoggedIn ={setIsLoggedIn}
-             isLoggedIn ={isLoggedIn} />
+             isLoggedIn ={isLoggedIn} 
+              
+             />
              :<Navigate to="/products"/>}/>
             <Route path = "/products" element = {<Products/>}/>
             <Route path = "/reviews" element = {
