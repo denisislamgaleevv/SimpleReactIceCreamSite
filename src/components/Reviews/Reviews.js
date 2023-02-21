@@ -72,8 +72,8 @@ export class Reviews extends Component {
      
   }
   
-render(scrollOn){
-  const isScrollOn = scrollOn ? 'visible':'hidden';
+render( ){
+   
   if (this.state.reviewsArr.length === 0)
     return <h2 className = 'zagruzka'>Загрузка данных...</h2>
   else
@@ -82,7 +82,7 @@ render(scrollOn){
       <>  
      <div className='Reviews'> 
       <div className='btnReviewsBlock'>  
-      <h2 className='h3'> Оставьте отзыв и получите 10 баллов!</h2>  <button className='btn' onClick={ this.showShowReviewsForm }>Оставить отзыв</button>
+      <h2 className='h3'> Оставьте отзыв и мы сделаем вам скидку</h2>  <button className='btn' onClick={ this.showShowReviewsForm }>Оставить отзыв</button>
            </div>
    
           

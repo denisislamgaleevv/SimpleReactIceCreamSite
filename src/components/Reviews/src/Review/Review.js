@@ -6,9 +6,13 @@ import StarIcon from '@mui/icons-material/Star';
  
   const getStars = stars => {
     let allStars = []
+     
     for (let i = 0; i < stars; i++) {
        
         allStars.push( <StarIcon className='StarIcon' />)
+    }
+    for (let i = stars; i < 5; i++) {
+      allStars.push( <StarIcon className='StarIconWhite' />)
     }
     return(allStars)
     

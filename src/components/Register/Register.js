@@ -19,7 +19,7 @@ export class Register extends Component {
     dialogFormVisibility1: false, 
     dialogFormVisibility2: false
   }; 
-
+ 
   hideDialogWindow = () =>{
     this.setState(({ }) =>{
         return{ 
@@ -160,14 +160,107 @@ export class Register extends Component {
   
    
   render(){
-     
+   
   if (this.state.dialogFormVisibility1 === true){
-    return <DialogWindow text = {"Вы уже зарегистрированы!"} 
+     
+    return (
+      <>  
+         <DialogWindow text = {"Вы уже зарегистрированы!"} 
     hideDialogWindow = {this.hideDialogWindow}/>
+      <div className="Reg">
+      <img src = {pic1} className='morozReg'/> 
+     
+      <img src = {pic6} className='malinaReg'/> 
+    
+     <form className='regForm'>  
+     <div className='probel1'>
+           &nbsp; 
+           </div>
+       
+     
+     <h3 className='regElem1'>Вход/Регистрация</h3>
+    
+      <div className='regElem3' >
+       <input type = "text" 
+       onChange={this.handleLoginChange}
+        placeholder='Логин'
+         name = "login"
+          className='inputReg'
+          required
+          /> 
+      </div>
+       <div className='regElem'>
+       <input type = "password"
+        onChange={this.handlePasswordChange} 
+        placeholder='Пароль'
+          name = "parol"
+          className='inputReg' 
+          required/> 
+      </div>
+      <div className='regElem2'>
+      <button className='btnReg' onClick={this.addNewReg}>Регистрация</button>
+       <button className='btnReg'   onClick={this.handleLogIn}>Войти</button>
+      
+       </div>
+       <div className='smallFormText'>  
+       
+       </div>
+       </form>
+   </div>
+  
+</>
+    )
   }
   else if (this.state.dialogFormVisibility2 === true){
-    return <DialogWindow text = {"Неверный пароль!"} 
+    
+    return ( <>  
+    
+    <DialogWindow text = {"Неверный пароль!"} 
     hideDialogWindow = {this.hideDialogWindow}/>
+
+<div className="Reg">
+       <img src = {pic1} className='morozReg'/> 
+      
+       <img src = {pic6} className='malinaReg'/> 
+     
+      <form className='regForm'>  
+      <div className='probel1'>
+            &nbsp; 
+            </div>
+        
+      
+      <h3 className='regElem1'>Вход/Регистрация</h3>
+     
+       <div className='regElem3' >
+        <input type = "text" 
+        onChange={this.handleLoginChange}
+         placeholder='Логин'
+          name = "login"
+           className='inputReg'
+           required
+           /> 
+       </div>
+        <div className='regElem'>
+        <input type = "password"
+         onChange={this.handlePasswordChange} 
+         placeholder='Пароль'
+           name = "parol"
+           className='inputReg' 
+           required/> 
+       </div>
+       <div className='regElem2'>
+       <button className='btnReg' onClick={this.addNewReg}>Регистрация</button>
+        <button className='btnReg'   onClick={this.handleLogIn}>Войти</button>
+       
+        </div>
+        <div className='smallFormText'>  
+        
+        </div>
+        </form>
+    </div>
+
+</>
+    )
   }
   
   else return (

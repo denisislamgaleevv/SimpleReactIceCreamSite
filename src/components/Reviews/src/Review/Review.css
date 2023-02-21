@@ -1,8 +1,13 @@
 .Review{
     background-color: white;
+    margin-bottom: 2%;
 }
 .StarIcon{
-    color: rgb(209, 165, 133);
+    color: rgb(179, 101, 45);
+    padding-top: 5px;
+}
+.StarIconWhite{
+    color: rgb(230, 189, 160);
     padding-top: 5px;
 }
 .h3{

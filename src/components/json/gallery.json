@@ -68,5 +68,25 @@
       "https://i.ytimg.com/vi/7hdhEgkbY4E/maxresdefault.jpg",
       "https://img.freepik.com/premium-photo/lemon-ice-cream-with-mint-in-a-glass_164638-8939.jpg"
      ]
-    }
+    },
+    {
+        "category": 2,
+        "name": "Фисташковое",
+        "photos": [
+         "https://yummi.club/wp-content/uploads/2016/06/m-fistash4-Screenshot7.jpg",
+         "https://www.recetin.com/wp-content/uploads/2012/10/helado_chirimoya.jpg",
+         "https://s1.eda.ru/StaticContent/Photos/120213181523/120214134728/p_O.jpg",
+         "https://smachno.ua/wp-content/uploads/2018/06/14/Depositphotos_50625209_m-2015.jpg"
+        ]
+       }, 
+       {
+        "category": 2,
+        "name": "Клубничное",
+        "photos": [
+         "https://www.racionika.ru/upload/iblock/e20/e20debbe6a4cfc510ae0294215109f9d.jpg",
+         "https://teleprogramma.pro/sites/default/files/styles/post_content_1200x675_16_9/public/text-images/2022-06/1_1655985840_1655986377.jpg?itok=PqAdlRED",
+         "https://cdn.vkuso.ru/uploads/104300_9267aa28b6d272010cf53e1478893307_040720-043439-660x440.jpg",
+         "https://www.photorecept.ru/wp-content/uploads/2022/06/klubnichnoe-morozhenoe-s-mjatoj-2.jpg"
+        ]
+       }
    ]

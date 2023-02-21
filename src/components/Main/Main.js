@@ -129,7 +129,7 @@ render(scrollOn){
            </div>
            <div className="productItem">
            <img className="productPhoto" src={beaut} alt="" width="650"/>
-               <div clasName="productContent">
+               <div className="productContent">
                    <div className="productTitle">Название продукта</div>
                    <div className="productText">описание продукта</div>
                </div>

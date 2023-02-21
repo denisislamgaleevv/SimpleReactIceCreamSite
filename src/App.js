@@ -11,11 +11,13 @@ export function App() {
   
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     if (localStorage.getItem('isLoggedIn') === 'true') return true
+    
     return false
+   
   })
   const [points, setPoints] = useState((localStorage.getItem('points')  ) )
   const [userName, setUserName] = useState((localStorage.getItem('userName')) )
-  const [regArr, setRegArr] = useState((localStorage.getItem('regArr')  ) )
+   
   /* 
   const mysql = require('mysql');  //подключаем mysql
   const conn = mysql.createConnection({
@@ -35,11 +37,12 @@ export function App() {
   }
     )
     */
-     
+      
   return (
+ 
     <>  
     <div className="App">
-      
+    
      <Header  
      props
     userName = {userName}
@@ -59,9 +62,9 @@ export function App() {
              setUserName = {setUserName} 
              setIsLoggedIn ={setIsLoggedIn}
              isLoggedIn ={isLoggedIn} 
-             regArr = {regArr}
+             regArr = {(localStorage.getItem('regArr'))}
              />
-             :<Navigate to="/products"/>}/>
+             :<Navigate to="/"/>}/>
             <Route path = "/products" element = {<Products/>}/>
             <Route path = "/reviews" element = {
             <Reviews
@@ -69,7 +72,7 @@ export function App() {
               points = {points}
               userName = {userName}
               isLoggedIn = {isLoggedIn}
-              regArr = {regArr}
+              regArr = {(localStorage.getItem('regArr'))}
             />}/>
           </Routes>
         </BrowserRouter>
