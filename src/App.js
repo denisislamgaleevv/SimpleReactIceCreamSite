@@ -14,7 +14,8 @@ export function App() {
     return false
   })
   const [points, setPoints] = useState((localStorage.getItem('points')  ) )
-  const [userName, setUserName] = useState((localStorage.getItem('userName') != '') )
+  const [userName, setUserName] = useState((localStorage.getItem('userName')) )
+  const [regArr, setRegArr] = useState((localStorage.getItem('regArr')  ) )
   /* 
   const mysql = require('mysql');  //подключаем mysql
   const conn = mysql.createConnection({
@@ -55,18 +56,20 @@ export function App() {
             <Route path = "/gallery" element = {<Gallery/>}/>
             <Route path = "/register" element = {!isLoggedIn?<Register
              props  
-            setUserName = {setUserName} 
+             setUserName = {setUserName} 
              setIsLoggedIn ={setIsLoggedIn}
              isLoggedIn ={isLoggedIn} 
-              
+             regArr = {regArr}
              />
              :<Navigate to="/products"/>}/>
             <Route path = "/products" element = {<Products/>}/>
             <Route path = "/reviews" element = {
             <Reviews
             props
+              points = {points}
               userName = {userName}
-             isLoggedIn = {isLoggedIn}
+              isLoggedIn = {isLoggedIn}
+              regArr = {regArr}
             />}/>
           </Routes>
         </BrowserRouter>

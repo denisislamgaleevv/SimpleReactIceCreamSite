@@ -6,15 +6,33 @@ import pic3 from './src/3.png'
 import pic4 from './src/4.png'
 import axios from 'axios';
 import pic6 from './src/6.png' 
-
+import ReactDOM from 'react-dom'
+import {DialogWindow} from '../../components/DialogWindow/DialogWindow';
 
 export class Register extends Component {
   state = {
     login: '', 
     password: '', 
     points: 0,
-    regArr : JSON.parse(localStorage.getItem('regArr')),
+    regArr : (localStorage.getItem('regArr')), 
+     
+    dialogFormVisibility1: false, 
+    dialogFormVisibility2: false
   }; 
+
+  hideDialogWindow = () =>{
+    this.setState(({ }) =>{
+        return{ 
+             
+          dialogFormVisibility1: false, 
+          dialogFormVisibility2: false
+        }; 
+    }) 
+    
+  }
+ 
+    
+ 
   componentDidMount(){
    fetch(`https://63708fe208218c267e017d80.mockapi.io/Arr`) 
   .then((res)=> res.json())
@@ -31,8 +49,13 @@ export class Register extends Component {
       console.warn(err);
       alert('ошибка')
   });
-  
+  window.addEventListener('keyup', (e) => {
+    if (e.key === 'Escape' ){
+       this.hideDialogWindow()
+    }
+})
 }
+  
   
   addNewReg = ( ) =>{    //регистрация нового пользователя
     const treg = {
@@ -46,8 +69,14 @@ export class Register extends Component {
     for (let i = 0; i < this.state.regArr.length; i++) {
        
       if (( this.state.regArr[i].login) === treg.login){
-        alert("Вы уже зарегистрированы!")
-        return 0
+       
+        this.setState({
+           dialogFormVisibility1:true
+         })
+          
+        
+         
+         return 0
       }
        
     }
@@ -64,14 +93,16 @@ export class Register extends Component {
       regArr: temp, 
       points:  treg.points
     })
-    
+   
     localStorage.setItem('points',    treg.points)
     localStorage.setItem('regArr', JSON.stringify(temp))
     localStorage.setItem('isLoggedIn', true);
     this.props.setIsLoggedIn(true); 
     localStorage.setItem('userName', this.state.login); 
     this.props.setUserName(this.state.login);
-    
+     
+      
+      
   }
   handleLogIn = () =>{     //вход уже зареганного пользователя
     const treg = {
@@ -84,26 +115,29 @@ export class Register extends Component {
     for (let i = 0; i < this.state.regArr.length; i++) {
       if ((( this.state.regArr[i].login) === treg.login) ){
         if ((this.state.regArr[i].password != treg.password)){
-          alert('Неверный пароль!')
+          this.setState({
+            dialogFormVisibility2: true
+          })
           return 0
         }
         else {
 
-           forPoint =  this.state.regArr[i].points
-           console.log(forPoint)
+          forPoint =  this.state.regArr[i].points
+          localStorage.setItem('points',  forPoint )
+          this.setState({
+            points:  forPoint
+          })     
+          localStorage.setItem('isLoggedIn', true);
+          this.props.setIsLoggedIn(true); 
+          localStorage.setItem('userName', this.state.login); 
+          this.props.setUserName(this.state.login); 
         }
             
       }
        
+       
     }
-   localStorage.setItem('points',  forPoint )
-     this.setState({
-       points:  forPoint
-     })     
-    localStorage.setItem('isLoggedIn', true);
-    this.props.setIsLoggedIn(true); 
-    localStorage.setItem('userName', this.state.login); 
-    this.props.setUserName(this.state.login); 
+    
     
  
   }
@@ -120,9 +154,25 @@ export class Register extends Component {
       password: e.target.value
     })
   }
+
+
+
+  
+   
   render(){
-  return (
+     
+  if (this.state.dialogFormVisibility1 === true){
+    return <DialogWindow text = {"Вы уже зарегистрированы!"} 
+    hideDialogWindow = {this.hideDialogWindow}/>
+  }
+  else if (this.state.dialogFormVisibility2 === true){
+    return <DialogWindow text = {"Неверный пароль!"} 
+    hideDialogWindow = {this.hideDialogWindow}/>
+  }
+  
+  else return (
     
+     
     <div className="Reg">
        <img src = {pic1} className='morozReg'/> 
       
@@ -165,4 +215,6 @@ export class Register extends Component {
     </div>
     )
 }
+
+ 
 }

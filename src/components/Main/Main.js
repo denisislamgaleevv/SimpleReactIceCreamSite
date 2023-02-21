@@ -7,8 +7,7 @@ import assorti from  './src/assorti.jpg';
  
 import pic1 from './src/1.png'
  
-
-
+ 
 
 
 import pic3 from './src/3.png'
@@ -33,6 +32,7 @@ import vk from './src/vk.png'
 import facebook from './src/facebook.png'
 
 import {LearnMoreForm} from './src/LearnMoreForm/LearnMoreForm';
+import {DialogWindow} from '../../components/DialogWindow/DialogWindow';
 
 import reviews1 from './src/reviews1.jpg'
 
@@ -232,17 +232,17 @@ render(scrollOn){
                            </p>
                        </div>
                        <div className="social">
-                       <a className="socialItem" href="#" target="_blank">
+                       <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a className="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a className="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="https://www.facebook.com/" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
@@ -260,17 +260,17 @@ render(scrollOn){
                            </p>
                        </div>
                        <div className="social">
-                           <a className="socialItem" href="#" target="_blank">
+                           <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
                                 
                                    <img className='socialIcon' src = {vk}/> 
                                 
                            </a>
-                           <a className="socialItem" href="#" target="_blank">
+                           <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
                                 
                                <img className='socialIcon' src = {inst}/> 
                                
                            </a>
-                           <a className="socialItem" href="#" target="_blank">
+                           <a className="socialItem" href="https://www.facebook.com/" target="_blank">
                                 
                                <img className='socialIcon' src = {facebook}/> 
                               
@@ -287,17 +287,17 @@ render(scrollOn){
                            </p>
                        </div>
                        <div className="social">
-                       <a className="socialItem" href="#" target="_blank">
+                       <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a className="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a className="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="https://www.facebook.com/" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            
@@ -314,17 +314,17 @@ render(scrollOn){
                            </p>
                        </div>
                        <div className="social">
-                       <a className="socialItem" href="#" target="_blank">
+                       <a className="socialItem" href="https://vk.com/denislamgaleev" target="_blank">
                                 
                                 <img className='socialIcon' src = {vk}/> 
                              
                         </a>
-                        <a className="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="https://cdnn21.img.ria.ru/images/sharing/article/1779307263.jpg?17793139991647899276" target="_blank">
                              
                             <img className='socialIcon' src = {inst}/> 
                             
                         </a>
-                        <a className="socialItem" href="#" target="_blank">
+                        <a className="socialItem" href="https://www.facebook.com/" target="_blank">
                              
                             <img className='socialIcon' src = {facebook}/> 
                            

@@ -9,7 +9,7 @@ export class Reviews extends Component {
       scrollOn: true,
       showReviewsForm: false,
       reviewsArr: JSON.parse(localStorage.getItem('reviewsArr')), 
-      
+       
   }; 
   addNewReview = (treview) =>{
     axios.post('https://63708fe208218c267e017d80.mockapi.io/ArrDima', treview)
@@ -45,6 +45,7 @@ export class Reviews extends Component {
       }) 
       
   }
+   
   componentDidMount(){
      
       window.addEventListener('keyup', (e) => {
@@ -84,7 +85,8 @@ render(scrollOn){
       <h2 className='h3'> Оставьте отзыв и получите 10 баллов!</h2>  <button className='btn' onClick={ this.showShowReviewsForm }>Оставить отзыв</button>
            </div>
    
-           {this.state.reviewsArr                                                            
+          
+           {(this.state.reviewsArr.reverse())                                                            
             .map((obj)=>(
               <Review 
               stars ={obj.stars}
@@ -92,7 +94,7 @@ render(scrollOn){
               text = {obj.text}
              />
         ))}
- 
+    
      { this.state.showReviewsForm ? (<>
       <ReviewsForm  
         hideShowReviewsForm = {this.hideShowReviewsForm}

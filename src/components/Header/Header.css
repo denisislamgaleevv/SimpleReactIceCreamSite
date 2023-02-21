@@ -1,3 +1,13 @@
 .logoutIcon{
     cursor: pointer; 
 }
+.menu:hover{
+    background-color: #eacba8;
+    border-radius: 8px;
+}
+.logoutIcon:hover{
+    background-color: #eacba8;
+    border-radius: 8px;
+   
+}
+ 
