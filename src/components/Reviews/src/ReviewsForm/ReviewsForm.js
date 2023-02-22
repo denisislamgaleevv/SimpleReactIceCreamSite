@@ -31,12 +31,13 @@ export class ReviewsForm extends Component  {
        
     }
      
-   
+    var c = new Date()   
     const treview = {
       name: tname === '' ? "Anon" : tname,  
       text: this.state.review, 
       stars:  this.state.coloredStarCount, 
-      id: this.props.reviewsArr.length +1
+      id: this.props.reviewsArr.length +1, 
+      time:       c          //задание времени отзыва
     }   
 
 
@@ -113,7 +114,7 @@ render(){
             </div>
           </div>
       </div>
-      </div>
+    </div>
   )
   
 }

@@ -63,6 +63,7 @@ export class Main extends Component {
         
     }
     componentDidMount(){
+        
         window.addEventListener('keyup', (e) => {
             if (e.key === 'Escape' && this.state.showLearnMoreForm){
                this.hideShowLearnMoreForm()
@@ -104,7 +105,7 @@ render(scrollOn){
            </tr>
             
            <td className='probel'> </td>
-           <td>  <button className='btn' onClick={ this.showShowLearnMoreForm }>Узнать больше</button></td>
+           <td>  <button className='btn' onClick={ this.showShowLearnMoreForm }>Оставить заявку</button></td>
           
            
     </table>

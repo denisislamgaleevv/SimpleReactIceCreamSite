@@ -18,31 +18,52 @@ export const LearnMoreForm = ({ hideShowLearnMoreForm} ) => {
             </div>
           <div className='textLearnMoreFormHeader'>
             
-             <h2>   SweetCold - крупнейший производитель мороженого</h2>
+             <h2>Ваша заявка:</h2>
              
             </div>
             <div className='textLearnMoreForm'>
-            
-            Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий.
+            <div className='Reg' >
+              <div> 
+            <input type = "text" 
+     
+         placeholder='Фамилия'
            
+           className='inputReg'
+           required
+           /> 
             </div>
-            <div className='textLearnMoreForm'>
-            
-            Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий.
-           
+            <div className='probel1'>
+            &nbsp; 
             </div>
-            <div className='textLearnMoreForm'>
-            
-            Значимость этих проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации существенных финансовых и административных условий.
-           
+            <div>
+            <input type = "text" 
+       
+         placeholder='Имя'
+         
+           className='inputReg'
+           required
+           /> 
             </div>
-            <div className='textLearnMoreForm'>
-             
-            sweet_cold@gmail.com
-            
+            <div className='probel1'>
+            &nbsp; 
+            </div>
+            <div>
+            <input type = "text" 
+        
+           placeholder='Контактный номер'
+         
+           className='inputReg'
+           required
+           /> 
+            </div>
+                
+            </div>
+            </div>
+            <div className='probel1'>
+            &nbsp; 
             </div>
             <div className='btnLearnMoreWrapper'>  
-            <button className='btn'   onClick={ hideShowLearnMoreForm} >Закрыть</button>
+            <button className='btn'   onClick={ hideShowLearnMoreForm} >Отправить</button>
             </div>
           </div>
       </div>

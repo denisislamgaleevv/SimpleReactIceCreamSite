@@ -19,12 +19,13 @@ import StarIcon from '@mui/icons-material/Star';
   };
 
 
-export const Review = ({stars,  name, text}) => {
+export const Review = ({stars,  name, text, time}) => {
    
   return (
     <div className="Review">
         <div>  
        <h3 className='h3'>   {name}  &nbsp;&nbsp;&nbsp;  { getStars(stars)} </h3> 
+       {time}
         </div>
       
         <div>  
@@ -33,7 +34,7 @@ export const Review = ({stars,  name, text}) => {
 
         
         <div>
-
+        
         
         </div>
       </div>

@@ -92,6 +92,7 @@ render( ){
               stars ={obj.stars}
               name ={obj.name} 
               text = {obj.text}
+              time = {obj.time}
              />
         ))}
     
