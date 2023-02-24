@@ -63,7 +63,6 @@ export class Main extends Component {
         
     }
     componentDidMount(){
-        
         window.addEventListener('keyup', (e) => {
             if (e.key === 'Escape' && this.state.showLearnMoreForm){
                this.hideShowLearnMoreForm()

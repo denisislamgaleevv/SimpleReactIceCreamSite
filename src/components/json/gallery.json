@@ -1,6 +1,50 @@
 [
     {
      "category": 2,
+     "name": "Шоколадное",
+     "cost": 250, 
+     "photos": [
+      "https://www.photorecept.ru/wp-content/uploads/2021/11/shokoladnoe-morozhenoe-s-kusochkami-shokolada-9.jpg",
+      "https://www.maggi.ru/data/images/recept/img640x500/recept_6211_kj2h.jpg",
+      "https://dom-desertov.ru/wp-content/uploads/2018/06/shokoladnoe-morozhenoe-v-domashnih-usloviyah-1-1000x1500.jpg",
+      "https://xcoffee.ru/wp-content/uploads/2020/06/db82c463c9466b5593831eb57d0036ac.jpg"
+     ]
+    },
+    {
+     "category": 2,
+     "name": "Лимонное",
+     "cost": 260, 
+     "photos": [
+      "https://avatars.dzeninfra.ru/get-zen_doc/1653873/pub_5c7e829517b52000b3abe652_5c7e842873b9c200b537a022/scale_1200",
+      "https://www.patee.ru/r/x6/18/89/71/960m.jpg",
+      "https://i.ytimg.com/vi/7hdhEgkbY4E/maxresdefault.jpg",
+      "https://img.freepik.com/premium-photo/lemon-ice-cream-with-mint-in-a-glass_164638-8939.jpg"
+     ]
+    },
+    {
+     "category": 2,
+     "name": "Фисташковое",
+     "cost": 310, 
+     "photos": [
+      "https://yummi.club/wp-content/uploads/2016/06/m-fistash4-Screenshot7.jpg",
+      "https://www.recetin.com/wp-content/uploads/2012/10/helado_chirimoya.jpg",
+      "https://s1.eda.ru/StaticContent/Photos/120213181523/120214134728/p_O.jpg",
+      "https://smachno.ua/wp-content/uploads/2018/06/14/Depositphotos_50625209_m-2015.jpg"
+     ]
+    },
+    {
+     "category": 2,
+     "name": "Клубничное",
+     "cost": 290, 
+     "photos": [
+      "https://www.racionika.ru/upload/iblock/e20/e20debbe6a4cfc510ae0294215109f9d.jpg",
+      "https://teleprogramma.pro/sites/default/files/styles/post_content_1200x675_16_9/public/text-images/2022-06/1_1655985840_1655986377.jpg?itok=PqAdlRED",
+      "https://cdn.vkuso.ru/uploads/104300_9267aa28b6d272010cf53e1478893307_040720-043439-660x440.jpg",
+      "https://www.photorecept.ru/wp-content/uploads/2022/06/klubnichnoe-morozhenoe-s-mjatoj-2.jpg"
+     ]
+    },
+    {
+     "category": 2,
      "name": "Разное",
      "photos": [
       "https://mykaleidoscope.ru/uploads/posts/2021-09/1632368329_6-mykaleidoscope-ru-p-krasivoe-morozhenoe-krasivo-foto-6.jpg",
@@ -12,6 +56,7 @@
     {
      "category": 1,
      "name": "Малина",
+    "cost": 300, 
      "photos": [
       "https://sergiev.ru/media/images/2697/malinovaya_malina.jpg",
       "https://img.povar.ru/uploads/90/b5/f3/bc/yagodi_malini_malina-517679.jpg",
@@ -22,6 +67,7 @@
     {
      "category": 1,
      "name": "Лимоны",
+    "cost": 150, 
      "photos": [
       "https://klike.net/uploads/posts/2020-03/1584355850_2.jpg",
       "https://avatarko.ru/img/kartinka/1/lyubov_limon.jpg",
@@ -32,6 +78,7 @@
     {
      "category": 1,
      "name": "Какао",
+    "cost": 400, 
      "photos": [
       "https://lookbio.ru/wp-content/uploads/2013/05/ed126a66bb8ae424bb6fdb62222448ea.jpg",
       "https://cs9.pikabu.ru/post_img/big/2018/03/02/12/1520021699161838477.jpg",
@@ -42,51 +89,12 @@
     {
      "category": 2,
      "name": "Ванильное",
+     "cost": 180, 
      "photos": [
       "https://s1.eda.ru/StaticContent/Photos/160312155529/160804132500/p_O.jpg",
       "https://vhealth.ru/img/products/18422.jpg",
       "https://s1.eda.ru/StaticContent/Photos/120213175629/120213175714/p_O.jpg",
       "https://cdn.lifehacker.ru/wp-content/uploads/2020/06/Depositphotos_108250130_xl-2015-1_1591093757-1280x640.jpg"
      ]
-    },
-    {
-     "category": 2,
-     "name": "Шоколадное",
-     "photos": [
-      "https://www.photorecept.ru/wp-content/uploads/2021/11/shokoladnoe-morozhenoe-s-kusochkami-shokolada-9.jpg",
-      "https://www.maggi.ru/data/images/recept/img640x500/recept_6211_kj2h.jpg",
-      "https://dom-desertov.ru/wp-content/uploads/2018/06/shokoladnoe-morozhenoe-v-domashnih-usloviyah-1-1000x1500.jpg",
-      "https://xcoffee.ru/wp-content/uploads/2020/06/db82c463c9466b5593831eb57d0036ac.jpg"
-     ]
-    },
-    {
-     "category": 2,
-     "name": "Лимонное",
-     "photos": [
-      "https://avatars.dzeninfra.ru/get-zen_doc/1653873/pub_5c7e829517b52000b3abe652_5c7e842873b9c200b537a022/scale_1200",
-      "https://www.patee.ru/r/x6/18/89/71/960m.jpg",
-      "https://i.ytimg.com/vi/7hdhEgkbY4E/maxresdefault.jpg",
-      "https://img.freepik.com/premium-photo/lemon-ice-cream-with-mint-in-a-glass_164638-8939.jpg"
-     ]
-    },
-    {
-        "category": 2,
-        "name": "Фисташковое",
-        "photos": [
-         "https://yummi.club/wp-content/uploads/2016/06/m-fistash4-Screenshot7.jpg",
-         "https://www.recetin.com/wp-content/uploads/2012/10/helado_chirimoya.jpg",
-         "https://s1.eda.ru/StaticContent/Photos/120213181523/120214134728/p_O.jpg",
-         "https://smachno.ua/wp-content/uploads/2018/06/14/Depositphotos_50625209_m-2015.jpg"
-        ]
-       }, 
-       {
-        "category": 2,
-        "name": "Клубничное",
-        "photos": [
-         "https://www.racionika.ru/upload/iblock/e20/e20debbe6a4cfc510ae0294215109f9d.jpg",
-         "https://teleprogramma.pro/sites/default/files/styles/post_content_1200x675_16_9/public/text-images/2022-06/1_1655985840_1655986377.jpg?itok=PqAdlRED",
-         "https://cdn.vkuso.ru/uploads/104300_9267aa28b6d272010cf53e1478893307_040720-043439-660x440.jpg",
-         "https://www.photorecept.ru/wp-content/uploads/2022/06/klubnichnoe-morozhenoe-s-mjatoj-2.jpg"
-        ]
-       }
+    }
    ]

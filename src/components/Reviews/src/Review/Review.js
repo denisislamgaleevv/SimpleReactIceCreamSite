@@ -23,12 +23,13 @@ export const Review = ({stars,  name, text, time}) => {
    
   return (
     <div className="Review">
-        <div>  
-       <h3 className='h3'>   {name}  &nbsp;&nbsp;&nbsp;  { getStars(stars)} </h3> 
-       {time}
-        </div>
+          
+       <h3 className='h31'>   {name}  &nbsp;&nbsp;&nbsp;  { getStars(stars)} </h3> 
       
-        <div>  
+         
+      
+        <h3 className='h3'  сlassName = 'timeDiv'>{time }&nbsp;</h3>
+        <div  >  
         {text}
         </div>
 

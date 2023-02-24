@@ -4,6 +4,8 @@ import {React, Component} from 'react';
 import CloseIcon from '@mui/icons-material/Close'; 
 import StarIcon from '@mui/icons-material/Star';
 import axios from 'axios'
+import moment from 'moment';
+
 export class ReviewsForm extends Component  {
   
   state = {
@@ -31,13 +33,13 @@ export class ReviewsForm extends Component  {
        
     }
      
-    var c = new Date()   
+    
     const treview = {
       name: tname === '' ? "Anon" : tname,  
       text: this.state.review, 
       stars:  this.state.coloredStarCount, 
       id: this.props.reviewsArr.length +1, 
-      time:       c          //задание времени отзыва
+      time:      String(moment().format('MMMM Do YYYY'))         //задание времени отзыва
     }   
 
 

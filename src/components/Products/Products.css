@@ -64,10 +64,11 @@
     height: 320px;
 }
 .chocoPicOneColor{
-    width: 200px;
-    height: 200px;
-    margin-top: 50%;
+    width: 300px;
+    height: 250px;
+    margin-top: 20%;
     float: left;
+    
 }
 .chocoTextWrapper{ 
     margin-right: 100%;

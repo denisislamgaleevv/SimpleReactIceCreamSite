@@ -30,6 +30,24 @@
   color: rgb(254, 251, 247);
   margin-top: 0.5%;
 }
+.ShoppingBasketIcon{
+  
+ 
+  text-decoration: none; 
+  font-family: 'Alegreya SC', serif;
+  color: rgb(254, 251, 247);
+      
+  font-size: 14px;
+   
+  position: absolute;
+  top: 1%;
+  left: 88%;
+  text-align: center;
+  font-family: 'Alegreya SC', serif;  
+  font-size: 24px;
+  z-index: 3;
+ 
+}
 .welcome{
   display:table-row;
   margin-left: 13%;

@@ -5,6 +5,7 @@ import {Products} from './components/Products/Products';
 import {Routes, Route, BrowserRouter,  Navigate} from 'react-router-dom';
 import {React, useState} from 'react';
 import {Gallery } from './components/Gallery/Gallery'
+ 
 import {Header} from './components/Header/Header'
 import {Reviews} from './components/Reviews/Reviews'
 export function App() {
@@ -42,7 +43,7 @@ export function App() {
  
     <>  
     <div className="App">
-    
+  
      <Header  
      props
     userName = {userName}
@@ -57,6 +58,7 @@ export function App() {
           <Routes>
             <Route path = "/" element = {<Main/>}/>
             <Route path = "/gallery" element = {<Gallery/>}/>
+          
             <Route path = "/register" element = {!isLoggedIn?<Register
              props  
              setUserName = {setUserName} 
@@ -74,6 +76,7 @@ export function App() {
               isLoggedIn = {isLoggedIn}
               regArr = {(localStorage.getItem('regArr'))}
             />}/>
+              
           </Routes>
         </BrowserRouter>
       </main>

@@ -82,7 +82,7 @@ render( ){
       <>  
      <div className='Reviews'> 
       <div className='btnReviewsBlock'>  
-      <h2 className='h3'> Оставьте отзыв и мы сделаем вам скидку</h2>  <button className='btn' onClick={ this.showShowReviewsForm }>Оставить отзыв</button>
+      <h2 className='h31'> Оставьте отзыв и мы сделаем вам скидку</h2>  <button className='btn' onClick={ this.showShowReviewsForm }>Оставить отзыв</button>
            </div>
    
           

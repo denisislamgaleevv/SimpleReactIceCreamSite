@@ -72,7 +72,7 @@ export const Products = () => {
 
 
            <div className='chocoPicOneColorWrapper'>  
-                <img className='chocoPicOneColor' src = {pic5}/> 
+                <img className='chocoPicOneColor' src = {pic2}/> 
              </div>
 
            

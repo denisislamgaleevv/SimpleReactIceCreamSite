@@ -2,16 +2,17 @@ import {React,useState } from 'react';
 import './Gallery.scss';
 import { useEffect } from 'react';
 import {Collection} from './Collection.jsx';
-
+ 
 export const Gallery = () =>{
     const cats = [
         {"name": "Все"},
         {"name": "Ингридиенты"},
         {"name": "Мороженое"},
     ]
-const [categoryId,setCategoryId] = useState(0);
+const [categoryId, setCategoryId] = useState(0);
 const [searchValue, setSearchValue] = useState('');
 const [collections, setCollections] =useState([]);
+ const [basketClicked, setBasketClicked] =useState(false);
  
 useEffect(()=>{
     fetch(`https://63708fe208218c267e017d80.mockapi.io/register?${
@@ -21,7 +22,7 @@ useEffect(()=>{
     .then((res)=> res.json())
     .then((json) => {
         setCollections(json);
-       
+        console.log(collections)
     })
     .catch((err)=>{
         console.warn(err);
@@ -35,7 +36,7 @@ if (collections.length ===0)
 else
 return (
     <div className="Gallery">
-      <h1>Наша галерея</h1>
+      <h1>Товары</h1>
       <div className="top">
 
    <ul className="tags">
@@ -60,15 +61,18 @@ return (
 
       </div>
       <div className="content">
-
-       
-      {collections                                                                 
+        
+      { 
+       collections                                                                 
         .filter((obj)=> obj.name.toLowerCase().includes(searchValue.toLowerCase()))
         .map((obj, index)=>(
-            <Collection key ={index} name ={obj.name} images = {obj.photos}/>
+            
+            <Collection key ={index} cost = {obj.cost} name ={obj.name} images = {obj.photos} 
+            basketClicked = {basketClicked}
+            setBasketClicked = { setBasketClicked}
+            />
         ))}
-
-
+ 
 
       </div>
     </div>

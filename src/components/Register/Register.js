@@ -14,7 +14,7 @@ export class Register extends Component {
     login: '', 
     password: '', 
     points: 0,
-    regArr : (localStorage.getItem('regArr')), 
+    regArr : [], 
      
     dialogFormVisibility1: false, 
     dialogFormVisibility2: false
@@ -34,6 +34,7 @@ export class Register extends Component {
     
  
   componentDidMount(){
+     
    fetch(`https://63708fe208218c267e017d80.mockapi.io/Arr`) 
   .then((res)=> res.json())
   .then((json) => {
@@ -95,7 +96,7 @@ export class Register extends Component {
     })
    
     localStorage.setItem('points',    treg.points)
-    localStorage.setItem('regArr', JSON.stringify(temp))
+   
     localStorage.setItem('isLoggedIn', true);
     this.props.setIsLoggedIn(true); 
     localStorage.setItem('userName', this.state.login); 
@@ -222,7 +223,8 @@ export class Register extends Component {
        <img src = {pic1} className='morozReg'/> 
       
        <img src = {pic6} className='malinaReg'/> 
-     
+        
+
       <form className='regForm'>  
       <div className='probel1'>
             &nbsp; 
@@ -268,7 +270,7 @@ export class Register extends Component {
      
     <div className="Reg">
        <img src = {pic1} className='morozReg'/> 
-      
+       
        <img src = {pic6} className='malinaReg'/> 
      
       <form className='regForm'>  
