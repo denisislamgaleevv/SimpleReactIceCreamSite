@@ -1,8 +1,10 @@
 [
     {
+        "index":1, 
      "category": 2,
      "name": "Шоколадное",
      "cost": 250, 
+     "count": 0, 
      "photos": [
       "https://www.photorecept.ru/wp-content/uploads/2021/11/shokoladnoe-morozhenoe-s-kusochkami-shokolada-9.jpg",
       "https://www.maggi.ru/data/images/recept/img640x500/recept_6211_kj2h.jpg",
@@ -11,9 +13,11 @@
      ]
     },
     {
+        "index":2, 
      "category": 2,
      "name": "Лимонное",
      "cost": 260, 
+     "count": 0, 
      "photos": [
       "https://avatars.dzeninfra.ru/get-zen_doc/1653873/pub_5c7e829517b52000b3abe652_5c7e842873b9c200b537a022/scale_1200",
       "https://www.patee.ru/r/x6/18/89/71/960m.jpg",
@@ -22,9 +26,11 @@
      ]
     },
     {
+        "index":3, 
      "category": 2,
      "name": "Фисташковое",
      "cost": 310, 
+     "count": 0, 
      "photos": [
       "https://yummi.club/wp-content/uploads/2016/06/m-fistash4-Screenshot7.jpg",
       "https://www.recetin.com/wp-content/uploads/2012/10/helado_chirimoya.jpg",
@@ -33,9 +39,11 @@
      ]
     },
     {
+        "index":4, 
      "category": 2,
      "name": "Клубничное",
      "cost": 290, 
+     "count": 0, 
      "photos": [
       "https://www.racionika.ru/upload/iblock/e20/e20debbe6a4cfc510ae0294215109f9d.jpg",
       "https://teleprogramma.pro/sites/default/files/styles/post_content_1200x675_16_9/public/text-images/2022-06/1_1655985840_1655986377.jpg?itok=PqAdlRED",
@@ -44,7 +52,9 @@
      ]
     },
     {
+        "index":5, 
      "category": 2,
+     "count": 0, 
      "name": "Разное",
      "photos": [
       "https://mykaleidoscope.ru/uploads/posts/2021-09/1632368329_6-mykaleidoscope-ru-p-krasivoe-morozhenoe-krasivo-foto-6.jpg",
@@ -54,8 +64,10 @@
      ]
     },
     {
+        "index":6, 
      "category": 1,
      "name": "Малина",
+     "count": 0, 
     "cost": 300, 
      "photos": [
       "https://sergiev.ru/media/images/2697/malinovaya_malina.jpg",
@@ -65,9 +77,11 @@
      ]
     },
     {
+        "index":7, 
      "category": 1,
      "name": "Лимоны",
     "cost": 150, 
+    "count": 0, 
      "photos": [
       "https://klike.net/uploads/posts/2020-03/1584355850_2.jpg",
       "https://avatarko.ru/img/kartinka/1/lyubov_limon.jpg",
@@ -76,9 +90,11 @@
      ]
     },
     {
+        "index":8, 
      "category": 1,
      "name": "Какао",
     "cost": 400, 
+    "count": 0, 
      "photos": [
       "https://lookbio.ru/wp-content/uploads/2013/05/ed126a66bb8ae424bb6fdb62222448ea.jpg",
       "https://cs9.pikabu.ru/post_img/big/2018/03/02/12/1520021699161838477.jpg",
@@ -87,9 +103,11 @@
      ]
     },
     {
+        "index":9, 
      "category": 2,
      "name": "Ванильное",
-     "cost": 180, 
+     "cost": 180,  
+     "count": 0, 
      "photos": [
       "https://s1.eda.ru/StaticContent/Photos/160312155529/160804132500/p_O.jpg",
       "https://vhealth.ru/img/products/18422.jpg",

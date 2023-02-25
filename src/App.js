@@ -5,11 +5,13 @@ import {Products} from './components/Products/Products';
 import {Routes, Route, BrowserRouter,  Navigate} from 'react-router-dom';
 import {React, useState} from 'react';
 import {Gallery } from './components/Gallery/Gallery'
- 
+
 import {Header} from './components/Header/Header'
 import {Reviews} from './components/Reviews/Reviews'
+ 
 export function App() {
-  
+   
+  const [basketArr, setBasketArr] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     if (localStorage.getItem('isLoggedIn') === 'true') return true
     
@@ -18,7 +20,7 @@ export function App() {
   })
   const [points, setPoints] = useState((localStorage.getItem('points')  ) )
   const [userName, setUserName] = useState((localStorage.getItem('userName')) )
-   
+  
   /* 
   const mysql = require('mysql');  //подключаем mysql
   const conn = mysql.createConnection({
@@ -42,6 +44,7 @@ export function App() {
   return (
  
     <>  
+      
     <div className="App">
   
      <Header  
@@ -57,7 +60,10 @@ export function App() {
         <BrowserRouter>  
           <Routes>
             <Route path = "/" element = {<Main/>}/>
-            <Route path = "/gallery" element = {<Gallery/>}/>
+            <Route path = "/gallery" element = {<Gallery 
+         
+            
+             />}/>
           
             <Route path = "/register" element = {!isLoggedIn?<Register
              props  
@@ -76,6 +82,7 @@ export function App() {
               isLoggedIn = {isLoggedIn}
               regArr = {(localStorage.getItem('regArr'))}
             />}/>
+            
               
           </Routes>
         </BrowserRouter>

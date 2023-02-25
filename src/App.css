@@ -41,11 +41,16 @@
    
   position: absolute;
   top: 1%;
-  left: 88%;
+  left: 87%;
   text-align: center;
   font-family: 'Alegreya SC', serif;  
   font-size: 24px;
-  z-index: 3;
+  z-index: 1;
+ 
+}
+.ShoppingBasketIcon:hover{
+  background-color: #eacba8;
+  border-radius: 8px;
  
 }
 .welcome{

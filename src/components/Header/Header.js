@@ -3,7 +3,7 @@ import logo from  './src/logo.png';
 import LogoutIcon from '@mui/icons-material/Logout';
 import {DialogWindowExit} from '../../components/DialogWindowExit/DialogWindowExit';
 import { useState} from 'react'
-import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+ 
 export const Header = ({
  
     isLoggedIn,
@@ -51,19 +51,12 @@ export const Header = ({
       <img className='logo' src = {logo}/>
       </div>
       <div className='menuWrapper'>  
-      
+       
         <a className = "menu" href = "/">Главная</a>
-        <a className = "menu" href = "/gallery">Сделать заказ</a>
+        <a className = "menu" href = "/gallery">Сделать&nbsp;заказ</a>
         <a className = "menu" href = "/products">Продукты</a>
         <a className = "menu" href = "/reviews">Отзывы</a>
-      <a className='menu' href = "/basket"><ShoppingBasketIcon/> </a> 
-        <a className = "menu" href = "/register" style = {{visibility:registerLinkVisibility}}>Вход</a>
-        <a className = "welcome" style = {{visibility:welcomeLinkVisibility}} >
-          Добро&nbsp;пожаловать,&nbsp;{localStorage.getItem('userName')}!&nbsp;У Вас 
-          &nbsp;{localStorage.getItem('points')}&nbsp; баллов&nbsp;
-          <LogoutIcon className='logoutIcon' onClick = {openForm } />  
-          
-          </a>
+       
       
         </div>
       </header>
@@ -77,7 +70,7 @@ export const Header = ({
   return (
      
     <div className="Header">
-       <a className='ShoppingBasketIcon' href = "/basket"><ShoppingBasketIcon/>Корзина </a> 
+       
           <header className="App-header">
       <div className='logoWrapper'>  
       <img className='logo' src = {logo}/>

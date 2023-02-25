@@ -2,22 +2,33 @@ import {React, useState} from "react";
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css"
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
- 
-export const Collection =({name, cost, images, basketClicked,  setBasketClicked})=> {
+import {basketjson} from '../../components/json/basket'
+
+export const Collection =({key, num,  name, cost, images, count, basketClickEvent, setInputValueArr, inputValueArr})=> {
     const [plaginVis, setPlaginVis] = useState(false);
-    const [inputValue, setInputValue] = useState(0)
+    const [inputValue, setInputValue] = useState(0);
+     
+
+    
 const picClickEvent = (  ) =>{
   
         setPlaginVis(!plaginVis);
 }
-const basketClickEvent = ()=>{
-    setBasketClicked(true)
-    
-}
+ 
 const inputChange =(e)=>{
     setInputValue(e.target.value)
+
+    let copy = Object.assign([], inputValueArr);
+     
+    
+    copy[num] = ( e.target.value); 
+    setInputValueArr(copy);
+
+ 
 }
+ 
     return (
+        
         <>  
         
         { 
@@ -37,12 +48,17 @@ const inputChange =(e)=>{
          <input className="input"
           type = 'number'
           onChange = {inputChange}
-          
+          value = {inputValueArr[key]}
           /> кг за&nbsp;
           {inputValue * cost} рублей &nbsp;
           <h4 className="basket"> 
-          Добавить в корзину <ShoppingBasketIcon className = 'ShoppingBasketIcon' 
-          onClick = { basketClickEvent} />    </h4></h5></div>
+         <div className="btnWrapper"> 
+          
+           
+           </div> 
+          
+          <ShoppingBasketIcon className = 'ShoppingBasketIcon' 
+          />    </h4></h5></div>
            
         </div>
         :
@@ -54,3 +70,7 @@ const inputChange =(e)=>{
         </>
     );
 }
+
+//<button className = 'btn2' onClick={basketClickEvent(inputValue)}  > 
+// Добавить в корзину 
+//</button>
