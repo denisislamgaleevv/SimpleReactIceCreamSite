@@ -16,17 +16,19 @@ const [collections, setCollections] =useState([]);
 const [basketClicked, setBasketClicked] =useState(false);
 const [inputValueArr, setInputValueArr] = useState([])
 const [basketFormVisibitity, setBasketFormVisibitity] =useState(false);
+const [thingsInBasket, setThingsInBasket] = useState(0)
  const basketClickEvent = ( )=>{
-   console.log('___________________')
-    collections.map((obj, index)=>(  
-        console.log(inputValueArr[index]*obj.cost, obj.name)
+   
      
-   ))
    setBasketFormVisibitity(!basketFormVisibitity)
 
  }
  const hideBasketForm =() =>{
     setBasketFormVisibitity(false)
+ }
+ const hideBasketFormBuy = () =>{
+    setBasketFormVisibitity(false)
+    alert('Спасибо за покупку!')
  }
 useEffect(()=>{
     fetch(`https://63708fe208218c267e017d80.mockapi.io/register?${
@@ -59,12 +61,19 @@ return (
       hideBasketForm  = { hideBasketForm } 
       text ={"форма"}
       collections ={collections }
+      hideBasketFormBuy = {hideBasketFormBuy}
       /> 
     
       </>
 )
 return(
     <div className="Gallery">
+          { 
+    //   collections    
+   //    .map((obj, index)=>(
+    //         setThingsInBasket(thingsInBasket+  obj.count*obj.cost)
+    //  ))
+       }
         <a className='ShoppingBasketIcon'  onClick={basketClickEvent} > <ShoppingBasketIcon/>Корзина (0)</a> 
       <h1>Товары</h1>
       <div className="top">
@@ -91,8 +100,7 @@ return(
 
       </div>
       <div className="content">
-        
-       
+     
       { 
        collections                                                                 
         .filter((obj)=> obj.name.toLowerCase().includes(searchValue.toLowerCase()))
