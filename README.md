@@ -11,6 +11,6 @@
 
 | Название | Изображение |
 | -------- | ----------- |
-| Продукт 1 | <img   src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Gallery.png" valign="top"> |
-| Продукт 2 | <img   src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Products.png" valign="top"> |
+| Продукт 1 | <img   width="400" src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Gallery.png" valign="top"> |
+| Продукт 2 | <img   width="400" src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Products.png" valign="top"> |
  
