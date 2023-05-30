@@ -8,9 +8,4 @@
  
 
  
-
-| Главная страница | Галерея | Продукты |
-| ------------- | ------------- | ------------- |
-| <img src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Main.png" alt="Изображение 1" width="200" height="300" valign="top"> | 
-<img src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Gallery.png" alt="Изображение 2" width="200" height="400" valign="top"> |
-<img src="https://github.com/denisislamgaleevv/SimpleReactIceCreamSite/blob/master/Products.png" alt="Изображение 3" width="200" height="250" valign="top"> |
+ 
